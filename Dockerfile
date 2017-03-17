@@ -1,4 +1,9 @@
-FROM ruby:2.4-alpine
+# FROM ruby:2.4-alpine
+FROM ruby:2.3-alpine
+
+# https://rubygems.org/gems/fluent-plugin-kubernetes_metadata_filter
+# https://rubygems.org/gems/fluent-plugin-elasticsearch
+# https://rubygems.org/gems/fluent-plugin-prometheus
 
 RUN apk --no-cache add --virtual .build-deps \
     make gcc libc-dev g++ \
