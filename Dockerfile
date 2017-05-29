@@ -10,10 +10,10 @@ RUN apk --no-cache add --virtual .build-deps \
   && gem install \
     json \
     oj \
-    fluentd:0.14.13 \
-    fluent-plugin-prometheus:0.2.1 \
-    fluent-plugin-kubernetes_metadata_filter:0.26.3 \
-    fluent-plugin-elasticsearch:1.9.2 \
+    fluentd:0.14.16 \
+    fluent-plugin-prometheus:0.3.0 \
+    fluent-plugin-kubernetes_metadata_filter:0.27.0 \
+    fluent-plugin-elasticsearch:1.9.5 \
   && apk del .build-deps
   # FIXME is there more stuff to clean up after builds?
 
